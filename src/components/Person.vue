@@ -11,23 +11,25 @@
 <script lang="ts">
     export default{
         name:'Person', //组件名
-        data(){
-            return {
-                name:'张三',
-                age:18,
-                tel:'15356500590'
+        setup(){
+            // 数据
+            let name = "张三"  //注意：这三个都不是响应式的
+            let age = 18
+            let tel = '15356500590'
+
+            // 方法
+            function changeName(){
+                name = 'zhang-san'
             }
-        },
-        methods:{
-            showTel(){
-                alert(this.tel)
-            },
-            changeName(){
-                this.name='Zhang San'
-            },
-            changeAge(){
-                this.age+=1
+            function changeAge{
+                age += 1
             }
+            function showTel(){
+                alert(tel)
+            }
+
+            // return {name,age} //{a:name, b:age}的简写形式
+            return {name, age, changeName, changeAge, showTel}
         }
     }
 </script>

@@ -1,8 +1,7 @@
 <template>
-    <div class="app">
-        <h1>你好</h1>
         <Person/>
-    </div>
+        <Person/>
+        <Person/>
 </template>
 
 <script lang="ts">
