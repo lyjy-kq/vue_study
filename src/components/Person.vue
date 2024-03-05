@@ -21,7 +21,7 @@
             function changeName(){
                 name = 'zhang-san'
             }
-            function changeAge{
+            function changeAge(){
                 age += 1
             }
             function showTel(){
@@ -29,7 +29,10 @@
             }
 
             // return {name,age} //{a:name, b:age}的简写形式
+            //将数据“交”出去，才能被使用
             return {name, age, changeName, changeAge, showTel}
+            //返回值也可以是函数
+            //return () => "哈哈"//箭头函数，function(){return '哈哈'}
         }
     }
 </script>
