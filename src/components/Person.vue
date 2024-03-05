@@ -9,18 +9,19 @@
     </div>
 </template>
 
-<script lang="ts" setup name="Person234">
+<script lang="ts" setup name="Person">
+    import {ref} from 'vue'
     // 数据
-    let name = "张三"  //注意：这三个都不是响应式的
-    let age = 18
+    let name = ref('张三')
+    let age = ref(18)
     let tel = '15356500590'
 
     // 方法
     function changeName() {
-        name = 'zhang-san'
+        name.value = 'zhang-san'
     }
     function changeAge() {
-        age += 1
+        age.value += 1
     }
     function showTel() {
         alert(tel)
