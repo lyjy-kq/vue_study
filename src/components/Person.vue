@@ -1,6 +1,5 @@
 <template>
     <div class="person">
-        <h2>{{ a }}</h2>
         <h2>姓名：{{ name }}</h2>
         <h2>年龄：{{ age }}</h2>
         <button @click="changeName">修改名字</button>
